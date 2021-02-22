@@ -28,7 +28,7 @@ The script can be
 
 Create a *.bat file, to run the file directly - I'm using a batch file with this content, to switch to the script location, before executing the script with a simple shell command.
 The script is running in a CLI, and show different states.
-
+```
 ECHO ON
 call C:\Users\Steffan\anaconda3\Scripts\activate.bat C:\Users\Steffan\anaconda3
 REM A batch script to execute a Python script
@@ -38,3 +38,4 @@ cd python
 cd Elforbrug
 python Eloverblik.py
 PAUSE
+```
