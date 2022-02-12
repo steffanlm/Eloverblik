@@ -19,7 +19,7 @@ client = InfluxDBClient(host='IP FOR INFLUXDB', port=8086, database='INFLUX DATA
 ```
 Get your TOKEN from Eloverblik.dk
 ```
-refresh_token= "TOKEN"
+refresh_token = "TOKEN"
 ```
 Get you METERID from Eloverblik.dk
 ```
