@@ -1,12 +1,14 @@
 ### Eloverblik to InfluxDB with Python
 Small python script to fetch meter data from eloverblik.dk.
-The script fetches all the Eloverblik data once every 24 hour, if it fails, it tries again the next day, and issues a local warning in the CLI
+The script fetches all the Eloverblik data once every 24 hour, if it fails, it tries again the next day, and issues a local warning in the CLI.
+Script is created for Windows, but feel free to alter it to use on other OS.
 
 ### Prerequisite
 You need to ensure, you have the following prerequisites installed (thats my current versions, so I haven't tested with other versions, but feel free to post if script is running well with other versions)
 ```
 pyeloverblik==0.0.7
 influxdb==5.3.0
+schedule==0.6.0
 ```
 
 ### How to start
@@ -24,7 +26,7 @@ Get you METERID from Eloverblik.dk
 meter = "METERID"
 ```
 ### Run the UI
-The script can be 
+The script can be started directly as a batch file in Windows
 
 Create a *.bat file, to run the file directly - I'm using a batch file with this content, to switch to the script location, before executing the script with a simple shell command.
 The script is running in a CLI, and show different states.
